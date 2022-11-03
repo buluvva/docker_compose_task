@@ -17,7 +17,6 @@ def categories():
     return jsonify({'categories': data})
 
 
-@app.route('/', methods=['GET'])
 @app.route('/api/products', methods=['GET'])
 def products():
     product = execute('SELECT DISTINCT product FROM Films')
